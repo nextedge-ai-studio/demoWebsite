@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "A modern e-commerce platform dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1635183607544-bf69187cc310?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlY29tbWVyY2UlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzU5MzgyODE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce dashboard"
+    },
+    {
+      "id": "project-2",
+      "description": "A sleek social media analytics dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhbmFseXRpY3MlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzU5NDEwNzc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "analytics dashboard"
+    },
+    {
+      "id": "project-3",
+      "description": "A vibrant company landing page.",
+      "imageUrl": "https://images.unsplash.com/photo-1633005992115-7e3c6d0dd293?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWJzaXRlJTIwbGFuZGluZ3BhZ2V8ZW58MHx8fHwxNzU5NDU0MDg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website landingpage"
+    },
+    {
+      "id": "project-4",
+      "description": "A clean and minimalist personal blog layout.",
+      "imageUrl": "https://images.unsplash.com/photo-1546554137-f86b9593a222?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwYmxvZ3xlbnwwfHx8fDE3NTk0MDQ1NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist blog"
+    },
+    {
+      "id": "avatar",
+      "description": "A photo of Wang Xiang-Hao.",
+      "imageUrl": "https://img.nextedge-ai-studio.com/demo_profile.jpg",
+      "imageHint": "man bridge"
+    }
+  ]
+}
