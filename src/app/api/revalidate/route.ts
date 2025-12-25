@@ -111,12 +111,22 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const path = searchParams.get("path");
 
-    // 如果沒有 path 參數，回傳健康檢查
+    // 如果沒有 path 參數，回傳健康檢查（含診斷資訊）
     if (!path) {
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+        const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
         return NextResponse.json({
             status: "ok",
             message: "ISR Revalidation API is running",
             usage: "Add ?path=/your-path to fetch content",
+            debug: {
+                supabaseUrl: supabaseUrl ? `${supabaseUrl.substring(0, 30)}...` : "NOT SET",
+                serviceRoleKey: serviceRoleKey
+                    ? `${serviceRoleKey.substring(0, 20)}...${serviceRoleKey.substring(serviceRoleKey.length - 10)}`
+                    : "NOT SET",
+                keyLength: serviceRoleKey?.length || 0,
+            }
         });
     }
 
