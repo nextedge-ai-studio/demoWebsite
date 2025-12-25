@@ -73,7 +73,15 @@ export async function POST(request: NextRequest) {
 
         if (supabaseError) {
             console.error("[Revalidate API] Supabase error:", supabaseError);
-            return errorResponse("Failed to update content cache", 500);
+            return NextResponse.json(
+                {
+                    error: "Failed to update content cache",
+                    revalidated: false,
+                    details: supabaseError.message,
+                    hint: supabaseError.hint || "Check if table exists and env vars are set"
+                },
+                { status: 500 }
+            );
         }
 
         // 5. 觸發 ISR 重新驗證
