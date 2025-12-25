@@ -1,4 +1,4 @@
-import { supabaseAdmin } from "../../../lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 import { ProjectCard } from "@/components/portfolio/project-card";
 import { projects } from "@/lib/projects";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
